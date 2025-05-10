@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shopee'ye Yönlendiriliyor...</title>
+  <title>Shopee'ye Yönlendiriliyorsunuz...</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     function openShopee() {
-      // Shopee app link
-      var appLink = "shopee://shop/71394384";
-      // Shopee web fallback link
-      var webLink = "https://shopee.co.id/shop/71394384";
+      var appLink = "shopee://shop/71394384"; // Uygulama bağlantısı
+      var webLink = "https://shopee.co.id/shop/71394384"; // Web bağlantısı
 
-      // Try to open in app
+      // Uygulamaya yönlendir
       window.location = appLink;
 
-      // Fallback to web if app doesn't open
+      // Uygulama açılmazsa 2 saniye sonra web sayfasına yönlendir
       setTimeout(function () {
         window.location = webLink;
       }, 2000);
