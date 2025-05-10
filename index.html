@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
+  <title>Menuju WhatsApp...</title>
   <meta charset="UTF-8">
-  <title>Pesan Sekarang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     function redirectToWhatsApp() {
-      window.location.href = "https://wa.me/6282246294647?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Anda";
+      const link = "https://wa.me/6282246294647?text=Untuk%20melakukan%20pemesanan%2C%20silakan%20klik%20link%20berikut%3A%20https%3A%2F%2Fshopee.co.id%2Fshop%2F71394384";
+      window.location.href = link;
     }
-    window.onload = redirectToWhatsApp;
   </script>
 </head>
-<body>
-  <p>Anda sedang diarahkan ke WhatsApp kami... Mohon tunggu.</p>
+<body onload="redirectToWhatsApp()">
+  <p>Anda sedang diarahkan ke WhatsApp... Mohon tunggu.</p>
 </body>
 </html>
