@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Buka Aplikasi Shopee</title>
-    <script>
-      function openApp() {
-        // Shopee app link
-        window.location.href = "shopeeid://shop/71394384";
-
-        // Eğer uygulama açılmazsa 2 saniye sonra web'e yönlendir
-        setTimeout(function() {
-          window.location.href = "https://id.shp.ee/mcr9AAt";
-        }, 2000);
-      }
-    </script>
-  </head>
-  <body onload="openApp()">
-    <p>Anda sedang diarahkan ke toko Shopee kami... Mohon tunggu.</p>
-  </body>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesan Sekarang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function redirectToWhatsApp() {
+      window.location.href = "https://wa.me/6282246294647?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Anda";
+    }
+    window.onload = redirectToWhatsApp;
+  </script>
+</head>
+<body>
+  <p>Anda sedang diarahkan ke WhatsApp kami... Mohon tunggu.</p>
+</body>
 </html>
