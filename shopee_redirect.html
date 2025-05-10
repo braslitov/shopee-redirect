@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopee'ye Yönlendiriliyor...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function openShopee() {
+      // Shopee app link
+      var appLink = "shopee://shop/71394384";
+      // Shopee web fallback link
+      var webLink = "https://shopee.co.id/shop/71394384";
+
+      // Try to open in app
+      window.location = appLink;
+
+      // Fallback to web if app doesn't open
+      setTimeout(function () {
+        window.location = webLink;
+      }, 2000);
+    }
+  </script>
+</head>
+<body onload="openShopee()">
+  <p>Shopee mağazanıza yönlendiriliyorsunuz... Lütfen bekleyin.</p>
+</body>
+</html>
